@@ -1,0 +1,193 @@
+HYBRID RECALL BENCH — bge-m3 + RRF k=60
+=========================================
+
+Date: 2026-05-12T23:04:16.211Z
+Branch: feat/hybrid-recall
+Mode: hybrid (FTS5 + bge-m3 fused via RRF k=60)
+Workspace: 01KMKRVYF2FN68D9N3C8BEGAHS
+Embedding coverage: 737/737 (100.0%)
+
+Side-by-side vs docs/recall-baseline.txt (FTS5-only).
+
+===HYBRID-HITS===
+n  | kind  | raw_query                          | fts_only_hits | hybrid_hits | mode
+---+-------+------------------------------------+---------------+-------------+------
+ 1 | multi | сломал OR failover OR overload     |             3 |          49 | hybrid
+ 2 | multi | context loss cascade               |            36 |          50 | hybrid
+ 3 | multi | aidan amnesia memory loss          |            50 |          50 | hybrid
+ 4 | multi | gmail watcher token refresh        |            50 |          50 | hybrid
+ 5 | multi | crash launchctl kickstart          |            25 |          50 | hybrid
+ 6 | multi | recall AND semantics multi-term    |            39 |          50 | hybrid
+ 7 | multi | note_create body text bug          |            34 |          50 | hybrid
+ 8 | multi | sanitizer regression OR fix        |            50 |          50 | hybrid
+ 9 | multi | качество памяти агентов            |            34 |          50 | hybrid
+10 | multi | embeddings hybrid retrieval        |            10 |          50 | hybrid
+11 | multi | руфло dactyl benchmark             |             3 |          49 | hybrid
+12 | mono  | крашнулся                          |             0 |          42 | hybrid
+13 | mono  | упал                               |             4 |          48 | hybrid
+14 | mono  | лёг                                |             0 |          41 | hybrid
+15 | mono  | инцидент                           |             8 |          50 | hybrid
+16 | mono  | галлюцинация                       |             1 |          41 | hybrid
+17 | mono  | починили                           |             0 |          43 | hybrid
+18 | mono  | сломалась                          |             0 |          47 | hybrid
+19 | mono  | postmortem                         |             0 |          42 | hybrid
+20 | mono  | инфраструктура                     |             7 |          48 | hybrid
+
+===HYBRID-TOP3-PER-QUERY===
+
+n=1  q="сломал OR failover OR overload"  hits=49  mode=hybrid
+  1. 01KNYY9XBWDCH9VRTSBCTVW6MS  context    AIZEK MIGRATION RUNBOOK — готово к cutover (план на 12 апреля 2026)
+
+PRE-MIGRATI
+  2. 01KN39W4TRC6WGWSXSMFH79H50  memory     Task "GPT-5.4 как FB1 во всех 3 агентах" — closed as done with updated logic. Fi
+  3. 01KN0WW883QW2VA869A4EQH1QN  memory     User checked whether I am back after earlier instability and repeated model-swit
+
+n=2  q="context loss cascade"  hits=50  mode=hybrid
+  1. 01KN3AA8NXBEJ4D47QF8KWFEGM  memory     LCM summaryProvider fix: changed from "openai" to "openai-codex" in Main, Alan, 
+  2. 01KN3M8TSGRY9VZCFZ5GM2CQ2B  memory     MEGA SESSION COMPLETE — March 31, 2026. All leaks stopped. Max2 stabilized at 8%
+  3. 01KQ8FHR0XMM0WRR6XRZ5P9BN4  memory     Root-cause fix for repeated Aidan memory loss (2026-04-27, Alan task #37).
+
+Symp
+
+n=3  q="aidan amnesia memory loss"  hits=50  mode=hybrid
+  1. 01KQ8FHR0XMM0WRR6XRZ5P9BN4  memory     Root-cause fix for repeated Aidan memory loss (2026-04-27, Alan task #37).
+
+Symp
+  2. 01KPBRAB99KR5J4RTK81F550RP  context    # AIDAN PRE-MIGRATION REPORT
+Generated: 2026-04-16
+
+## SECTION A: WORKSPACE AUDI
+  3. 01KN5KQNZDF5XT2QFX9Z3WEAQ1  knowledge  TOKEN OPTIMIZATION COMPLETE — all 7 strikes executed by Aidan on April 1, 2026.
+
+
+n=4  q="gmail watcher token refresh"  hits=50  mode=hybrid
+  1. 01KQ9PZYHDGB1F9PC9VS0VA1TY  memory     refresh-env-from-cf.sh — sync local gmail-watcher .env from CF env vars
+
+Path: ~
+  2. 01KQ9PYGPJD46NKYBDZNVGWW8Q  memory     gmail-watcher access mechanism for soltanov@happycake.us
+
+- Cloud Function (gen2
+  3. 01KPC3Q7A7NP6D1NQXEHPXECH3  memory     Gmail thread access for aidan@happycake.us — OAuth creds live on CF aidan-gmail-
+
+n=5  q="crash launchctl kickstart"  hits=50  mode=hybrid
+  1. 01KMS8PR1K2ENKARMP1JWQ60QM  memory     INCIDENT POST-MORTEM: Qoopia Server Down — March 27, 2026
+
+## WHAT HAPPENED
+
+On 
+  2. 01KN39P6X3YYSTPRE6JQV1BMKH  memory     INCIDENT: Gateway crash after Aidan switched all 4 agents to Opus 4.6 primary + 
+  3. 01KNYVTHXVDCXJP6YSP6RJ59G6  knowledge  ALAN — ФИНАЛЬНАЯ КОНФИГУРАЦИЯ АВТОЗАПУСКА (April 11, 2026)
+
+После инцидента 9-11
+
+n=6  q="recall AND semantics multi-term"  hits=50  mode=hybrid
+  1. 01KMPGGVCCP2C1TSFEWXYM470K  memory     IDEA: note() должен принимать необязательный параметр kind: idea | principle | i
+  2. 01KPF4WS3FVFVXB0Z4RRQNKMGD  rule       **KNOWLEDGE BASE — как использовать**
+
+В Qoopia есть 115 структурированных замет
+  3. 01KP1ZQZRE8AN4JFHA3YFM7D3R  context    WORKSPACE CONTEXT:
+- This agent handles personal and family matters
+- Use recall
+
+n=7  q="note_create body text bug"  hits=50  mode=hybrid
+  1. 01KQ8FHFBEQHMAJZXRQ0D0ECHS  memory     [Steward backfill for Aidan, 2026-04-27 — Aidan failed to write this himself due
+  2. 01KQ8FHR0XMM0WRR6XRZ5P9BN4  memory     Root-cause fix for repeated Aidan memory loss (2026-04-27, Alan task #37).
+
+Symp
+  3. 01KQARMJY57MZC0QQZBPRYBA08  rule       Telegram delivery rule (delivery bug 2026-04-28).
+
+Правило: для Telegram-сообщен
+
+n=8  q="sanitizer regression OR fix"  hits=50  mode=hybrid
+  1. 01KMZ4YSJMDT9KWMMVGHC3C260  memory     SESSION CLOSED 30 March 2026 05:30 CDT. Phase 1 accepted and deployed. Aidan on 
+  2. 01KPF4EHVZYN6R0YXAZ5K8QBWP  knowledge  **CHAIN-LINK SYSTEMS — COMPLEMENTARY ADVANTAGES**
+Source: Good Strategy / Bad St
+  3. 01KN5H6Z2BRHD4TQ3DSKD3SET4  knowledge  QOOPIA AUDIT PASS 2 COMPLETE — commit ce61ca3 on branch audit/full-review. 6 fil
+
+n=9  q="качество памяти агентов"  hits=50  mode=hybrid
+  1. 01KPFDWTV60FRWYFDNB169BW4D  knowledge  Agency agents - оценка 18.04.2026 (правильный репо: msitarzewski/agency-agents)
+
+  2. 01KQYV7WMJCW0MMSAZT0ZKCSPS  decision   Контекст с AI Agent Conference NYC (05.05.2026) — инсайты Асхата:
+
+- Вся индустр
+  3. 01KMWS7ZN5R47R558Q27VMPM0Y  memory     Коррекция данных от Айдана (snapshot 01KMWRHB735A4T373NSME5GYH0). Актуальная вер
+
+n=10  q="embeddings hybrid retrieval"  hits=50  mode=hybrid
+  1. 01KMZ4RNXT2JDW9V5GW0ZBEGKF  memory     Phase 1 ACCEPTED (30 March 2026). Migration 005 deployed: type field on notes (r
+  2. 01KMPG7ECG1M9V8C6DK7JBHTA0  memory     PRINCIPLE: каждая идея имеет право на существование. При брейншторм-сессиях по Q
+  3. 01KNZ9Z8D62RYM6QM9AFT5G74B  context    QOOPIA V3 REDESIGN — checkpoint 2026-04-11 ~17:25 CDT. Phase 1 dialog round 2 co
+
+n=11  q="руфло dactyl benchmark"  hits=49  mode=hybrid
+  1. 01KPF4P11FT46N0KDBW2HM37A0  knowledge  **UNIT ECONOMICS AT SCALE — CONTRIBUTION MARGIN TARGETS**
+Source: a16z Marketpla
+  2. 01KPF4JZ5J64FVQCQVT4FYNJTS  knowledge  **10% WEEKLY GROWTH AS STARTUP BENCHMARK**
+Source: Paul Graham Essays — paulgrah
+  3. 01KP9BZYYKGGFW9BSHHFRD89PX  knowledge  STRATEGIC COUNCIL MEMO — анализ 12 029 транскриптов звонков (15 апреля 2026)
+
+Ис
+
+n=12  q="крашнулся"  hits=42  mode=hybrid
+  1. 01KMKRVYF36ZHE667DSVHQGB7F  project    FLOCK
+  2. 01KN0XBS4CZVKCKT1MPSV8P1TG  memory     User added me to WhatsApp group named news temporarily.
+  3. 01KMKRVYF3S266JM3WTR3J6T2H  project    OPENCLAW IS
+
+n=13  q="упал"  hits=48  mode=hybrid
+  1. 01KP3HT5PJ7S6MEBQBSHZWGGFW  knowledge  bot-watchdog.sh — НЕ сносить, оставить как третий уровень защиты
+
+Контекст: 13 а
+  2. 01KNYYFB2BWV8MW7VBS5XNC688  memory     SESSION SUMMARY (April 11, 2026, 12:00–13:54 CDT) — Alan recovery + Aizek pre-mi
+  3. 01KPBRRMWKZY1S03RXRT2W8F1T  context    Phase 7b СТАРТ — 2026-04-16T18:27Z, 24h pilot
+
+Tailer PID 78544, запущен в /User
+
+n=14  q="лёг"  hits=41  mode=hybrid
+  1. 01KMKRVYF36ZHE667DSVHQGB7F  project    FLOCK
+  2. 01KMKRVYF3P6K87B40070TC9KA  project    LOCATIONS
+  3. 01KMKRVYF3S266JM3WTR3J6T2H  project    OPENCLAW IS
+
+n=15  q="инцидент"  hits=50  mode=hybrid
+  1. 01KP3HMR1S3V2J4A2Q8W0HQ6BD  memory     SYNC COMPLETE — Alan + Aizek на единой архитектуре (13 апреля 2026, 08:50 CDT)
+
+
+  2. 01KNYVTHXVDCXJP6YSP6RJ59G6  knowledge  ALAN — ФИНАЛЬНАЯ КОНФИГУРАЦИЯ АВТОЗАПУСКА (April 11, 2026)
+
+После инцидента 9-11
+  3. 01KPK94E6HKZ6GCYY06FH1S6XY  rule       Правило: выручка — только через сервис Happy Apps, не из реплики БД напрямую.
+
+П
+
+n=16  q="галлюцинация"  hits=41  mode=hybrid
+  1. 01KP908M11NWQQZ1GVRWPR7YG7  rule       ПРАВИЛО: Качество транскрипции звонков Happy Cake KZ
+
+ПРОБЛЕМА (обнаружена 2026-
+  2. 01KN742ZPNPHQZNGBYHV25VF36  task       [Новая] Движение ингредиента/полуфабриката/блюда
+  3. 01KMKRVYF3P6K87B40070TC9KA  project    LOCATIONS
+
+n=17  q="починили"  hits=43  mode=hybrid
+  1. 01KMSB2HVMA2YWEBFSKP9YDK8E  memory     Completed: deploy staging health checks is done and verified
+  2. 01KMKRVYF3S266JM3WTR3J6T2H  project    OPENCLAW IS
+  3. 01KMSAN2R73ECPPN5559AT4NWT  memory     Completed deploy health checks - all services are up and running
+
+n=18  q="сломалась"  hits=47  mode=hybrid
+  1. 01KN0WW883QW2VA869A4EQH1QN  memory     User checked whether I am back after earlier instability and repeated model-swit
+  2. 01KMKRVYF36ZHE667DSVHQGB7F  project    FLOCK
+  3. 01KN742ZPNPHQZNGBYHV25VF36  task       [Новая] Движение ингредиента/полуфабриката/блюда
+
+n=19  q="postmortem"  hits=42  mode=hybrid
+  1. 01KN3FB7X1KMA88XEJKSYE9DBF  knowledge  POST-MORTEM: Aizek polling incident. Aidan confirmed he created all 15 cron jobs
+  2. 01KMKRVYF3P6K87B40070TC9KA  project    LOCATIONS
+  3. 01KN742ZSA47BKC2EECATJ2XTV  task       [Новая] Отчёт по бонусам
+
+n=20  q="инфраструктура"  hits=48  mode=hybrid
+  1. 01KPDP9C754VXXK6DP29GYSFNX  contact    **Дархан** — Happy Cake KZ, сисадмин.
+Роль: инфраструктура, серверы, сеть, желез
+  2. 01KMKRVYF3P6K87B40070TC9KA  project    LOCATIONS
+  3. 01KQVK801RBNJQ2SHXGRA1FEZK  memory     MCP Happy Apps — инфраструктура (05.05.2026)
+
+PostgreSQL replica:
+- Host: 10.50.
+
+===HEADLINE===
+Mono-term zero-hits: 5 (FTS5) → 0 (hybrid) — rescued 5/5
+Multi-term total hits: 334 (FTS5) → 548 (hybrid)
+

@@ -1,0 +1,94 @@
+RECALL BASELINE — sanitizer OR-default
+=======================================
+
+Measurement date: 2026-05-12
+Branch: feat/sanitizer-or-default
+Sanitizer mode: variant A (multi-term → OR-joined prefix-match)
+Corpus: 737 active notes (workspace=alan), 5.4MB main DB + 2.3MB WAL
+SQL: SELECT … FROM notes_fts MATCH ? ORDER BY rank LIMIT 10
+
+Purpose
+-------
+Frozen reference for Step 2 (Ollama + bge-m3 + hybrid RRF). Without these
+numbers the hybrid mode cannot be measured — "did embeddings help?"
+requires a baseline. Same 20 queries from the Q1 zero-recall audit, rerun
+post-fix with the OR-default sanitizer.
+
+Headline
+--------
+- 11 multi-term queries: ALL produced ≥3 hits (was: 7/11 zero before fix).
+- 9  mono-term queries:  5/9 still zero or ≤1 hits — these are the
+  morphology/synonym cases that need embeddings (Step 2). Sanitizer alone
+  cannot fix them: "крашнулся" / "сломалась" / "починили" / "postmortem"
+  are absent as literal tokens, but the *concept* is in the corpus.
+
+===BASELINE===
+n  | kind  | raw_query                          | fts_expression                                          | hits
+---+-------+------------------------------------+---------------------------------------------------------+-----
+1  | multi | сломал OR failover OR overload     | "сломал"* OR "failover"* OR "overload"*                  |   3
+2  | multi | context loss cascade               | "context"* OR "loss"* OR "cascade"*                      |  41
+3  | multi | aidan amnesia memory loss          | "aidan"* OR "amnesia"* OR "memory"* OR "loss"*           | 148
+4  | multi | gmail watcher token refresh        | "gmail"* OR "watcher"* OR "token"* OR "refresh"*         |  89
+5  | multi | crash launchctl kickstart          | "crash"* OR "launchctl"* OR "kickstart"*                 |  28
+6  | multi | recall AND semantics multi-term    | "recall"* OR "semantics"* OR "multi-term"*               |  40
+7  | multi | note_create body text bug          | "note_create"* OR "body"* OR "text"* OR "bug"*           |  34
+8  | multi | sanitizer regression OR fix        | "sanitizer"* OR "regression"* OR "fix"*                  |  65
+9  | multi | качество памяти агентов            | "качество"* OR "памяти"* OR "агентов"*                   |  37
+10 | multi | embeddings hybrid retrieval        | "embeddings"* OR "hybrid"* OR "retrieval"*               |  10
+11 | multi | руфло dactyl benchmark             | "руфло"* OR "dactyl"* OR "benchmark"*                    |   4
+12 | mono  | крашнулся                          | "крашнулся"*                                             |   0
+13 | mono  | упал                               | "упал"*                                                  |   4
+14 | mono  | лёг                                | "лёг"*                                                   |   1
+15 | mono  | инцидент                           | "инцидент"*                                              |   8
+16 | mono  | галлюцинация                       | "галлюцинация"*                                          |   1
+17 | mono  | починили                           | "починили"*                                              |   0
+18 | mono  | сломалась                          | "сломалась"*                                             |   0
+19 | mono  | postmortem                         | "postmortem"*                                            |   0
+20 | mono  | инфраструктура                     | "инфраструктура"*                                        |   7
+
+===TOP3-PER-QUERY===
+Top-1 note for each query that produced ≥1 hit. Snippet is first 80 chars
+of note.text. Rank is FTS5 bm25 (lower = more relevant; we ORDER BY rank).
+Queries 12, 17, 18, 19 omitted — zero hits (target for Step 2 embeddings).
+
+n=1   01KN39W4TRC6WGWSXSMFH79H50  memory     Task "GPT-5.4 как FB1 во всех 3 агентах" — closed as done with updated logic. Fi
+n=2   01KMKRVYF9RSBSQT9T3B5KW190  task       Lossless-Claw v0.4.0 deployed to Alan & Aizek
+n=3   01KMPETZF3FKTR9SZMCDKMSVMM  memory     Qoopia Memory Layer deployed: note/recall/brief tools live. 29 MCP tools total.
+n=4   01KQ9PYGPJD46NKYBDZNVGWW8Q  memory     gmail-watcher access mechanism for soltanov@happycake.us — Cloud Function (gen2
+n=5   01KMS8PR1K2ENKARMP1JWQ60QM  memory     INCIDENT POST-MORTEM: Qoopia Server Down — March 27, 2026
+n=6   01KPF4WS3FVFVXB0Z4RRQNKMGD  rule       **KNOWLEDGE BASE — как использовать** В Qoopia есть 115 структурированных замет
+n=7   01KQ8FHR0XMM0WRR6XRZ5P9BN4  memory     Root-cause fix for repeated Aidan memory loss (2026-04-27, Alan task #37).
+n=8   01KMKRVYF90MPBBZHDC1CZBKCY  task       Fix heartbeat calendar check (HTTP 400)
+n=9   01KPFDWTV60FRWYFDNB169BW4D  knowledge  Agency agents - оценка 18.04.2026 (правильный репо: msitarzewski/agency-agents)
+n=10  01KNZARQ4DPJSK0PBB776RXJDR  context    QOOPIA V3 REDESIGN — SESSION HANDOFF 2026-04-11 ~17:40 CDT.
+n=11  01KPF4JZ5J64FVQCQVT4FYNJTS  knowledge  **10% WEEKLY GROWTH AS STARTUP BENCHMARK** Source: Paul Graham Essays
+n=13  01KPBRRMWKZY1S03RXRT2W8F1T  context    Phase 7b СТАРТ — 2026-04-16T18:27Z, 24h pilot
+n=14  01KN3PXH2DCWF5K3GD88CR74SG  context    ПОЛНЫЙ ОТЧЁТ СЕССИИ 31 марта - 1 апреля 2026 (5+ часов)
+n=15  01KPK94E6HKZ6GCYY06FH1S6XY  rule       Правило: выручка — только через сервис Happy Apps, не из реплики БД напрямую.
+n=16  01KP908M11NWQQZ1GVRWPR7YG7  rule       ПРАВИЛО: Качество транскрипции звонков Happy Cake KZ
+n=20  01KPDP9C754VXXK6DP29GYSFNX  contact    **Дархан** — Happy Cake KZ, сисадмин. Роль: инфраструктура, серверы, сеть, желез
+
+Interpretation
+--------------
+1. Sanitizer fix unlocks every multi-term query — implicit AND was the
+   pure blocker. No embeddings needed for these.
+
+2. Mono-term zero-hits (q12 крашнулся, q17 починили, q18 сломалась,
+   q19 postmortem) remain unsolved. The corpus DOES contain the related
+   incident notes (see q5 hit 01KMS8PR1K2ENKARMP1JWQ60QM — incident
+   post-mortem from March 27, 2026). FTS5 with `unicode61` tokenizer
+   has no morphology, no stemming, no synonyms. These four are the
+   acceptance criteria for Step 2.
+
+3. The `unicode61 remove_diacritics 2` tokenizer behaviour:
+   - "сломал" stems nothing → "сломалась" is invisible
+   - "крашнулся" / "крашнул" / "крашится" — all separate tokens
+   - "postmortem" vs "post-mortem" — different tokens (hyphen splits)
+   - "лёг" vs "лег" — diacritic-normalised → match (q14 → 1 hit)
+
+Step 2 success metric
+---------------------
+After hybrid RRF (k=60), expected outcome:
+- q12, q17, q18, q19 → ≥1 hit each (concept-match via bge-m3)
+- q1..q11 → top-3 stability ≥80% (no regression on FTS5-strong queries)
+- New query set (10 morphology variants of q12-q20 stems) → ≥70% hit rate

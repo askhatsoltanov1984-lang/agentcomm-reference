@@ -1,0 +1,165 @@
+# Cosine distribution probe
+# Date: 2026-05-13T03:04:09.390Z
+# Corpus: 739 embeddings, 739 live notes
+# Model: bge-m3 (1024-d)
+# Top-30 per query, columns: rank | cos | type | len | id | text[:60]
+
+=== "крашнулся" — top 30 of 739 ===
+ 1 | 0.4739 | project    | len=    5 | 01KMKRVYF36ZHE667DSVHQGB7F | FLOCK
+ 2 | 0.4607 | memory     | len=   55 | 01KN0XBS4CZVKCKT1MPSV8P1TG | User added me to WhatsApp group named news temporarily.
+ 3 | 0.4586 | project    | len=   11 | 01KMKRVYF3S266JM3WTR3J6T2H | OPENCLAW IS
+ 4 | 0.4548 | memory     | len=   92 | 01KN0WW883QW2VA869A4EQH1QN | User checked whether I am back after earlier instability and
+ 5 | 0.4438 | project    | len=    9 | 01KMKRVYF3P6K87B40070TC9KA | LOCATIONS
+ 6 | 0.4394 | context    | len= 4294 | 01KN3PXH2DCWF5K3GD88CR74SG | ПОЛНЫЙ ОТЧЁТ СЕССИИ 31 марта - 1 апреля 2026 (5+ часов, clau
+ 7 | 0.4371 | task       | len=   30 | 01KN742ZNR2ZW04QAK23M0607Y | [Новая] Караганда — приложение
+ 8 | 0.4370 | task       | len=  221 | 01KQBJB6QPJ602ARQ4VCH9VNAQ | Аналитический дашборд v1 — ПРОСРОЧЕНО (deadline 23.04). Исто
+ 9 | 0.4332 | memory     | len=   74 | 01KQSNE8SXGQMYGYEA8QK9XX7Y | Уведомил Асхата о входящем WhatsApp от Arailym (+77787433556
+10 | 0.4267 | memory     | len=  116 | 01KN0YZF82TD2WW8CNT28K1811 | AS попросил сделать продающий лендинг для Bunk Bed World в C
+11 | 0.4234 | memory     | len=  139 | 01KN10KP725ZKZ5GCK557RV900 | Перезапустил Cloudflare Tunnel после падения. Новая временна
+12 | 0.4220 | memory     | len=  143 | 01KN10BZ6S2Y3W8BEJ9CW62YFM | Поднял временную публичную ссылку через Cloudflare Tunnel на
+13 | 0.4213 | memory     | len=  101 | 01KN0Z34GWVRKQRMGXV4D4WS3J | В группе NEWS напомнили, что ждут ссылку на лендинг Bunk Bed
+14 | 0.4213 | task       | len=   30 | 01KMKRVYF9KVKKMG7PRSHG9859 | MCP Filesystem Server deployed
+15 | 0.4191 | task       | len=   24 | 01KN742ZNE258162GJF4BE5G1X | [Новая] Караганда — сайт
+16 | 0.4189 | memory     | len= 3898 | 01KP3HMR1S3V2J4A2Q8W0HQ6BD | SYNC COMPLETE — Alan + Aizek на единой архитектуре (13 апрел
+17 | 0.4185 | memory     | len=  104 | 01KN0ZC127T1WKT6S1H5021HD0 | AS разрешил залить лендинг любым доступным способом. Проверя
+18 | 0.4167 | memory     | len= 2245 | 01KNYWJZ30MCJ153TV40EMSBZ9 | CORRECTION к ноте 01KNYVTHXVDCXJP6YSP6RJ59G6 ("ALAN — ФИНАЛЬ
+19 | 0.4163 | task       | len=   48 | 01KN742ZPNPHQZNGBYHV25VF36 | [Новая] Движение ингредиента/полуфабриката/блюда
+20 | 0.4134 | memory     | len= 1804 | 01KQ6FX1WKFPRYNTRD9V51WYZB | Dashboard cookie auth shipped to prod 2026-04-27. Merge: f90
+21 | 0.4129 | memory     | len=  142 | 01KN10K12NWK674QS2JPG33MT6 | AS прислал скрин с ошибкой Cloudflare Tunnel 1033 и сказал, 
+22 | 0.4119 | task       | len=   24 | 01KN742ZSA47BKC2EECATJ2XTV | [Новая] Отчёт по бонусам
+23 | 0.4107 | memory     | len=  111 | 01KN0ZF7CSC0DRKQHY6R04Q28T | Нашёл активный логин Netlify. Перехожу к созданию/связыванию
+24 | 0.4093 | memory     | len=   75 | 01KN24GWCW64J29FN90ZMBFJFP | AS попросил переключить текущую групповую WhatsApp-сессию на
+25 | 0.4069 | memory     | len=   84 | 01KN0XXNKWS3XBBT0QNZJXP1M8 | В группе NEWS AS упомянул меня и спросил, здесь ли я; отвеча
+26 | 0.4065 | memory     | len=  228 | 01KRA8VTZ1RSF2ZFV0W7XTD3ES | 2026-05-10 20:00 CDT — Отправил Айсулу ежедневный check-in п
+27 | 0.4061 | task       | len=   28 | 01KMSAZY06T3G68F0CQF0WFXE1 | Deploy staging health checks
+28 | 0.4053 | knowledge  | len= 3667 | 01KNYVTHXVDCXJP6YSP6RJ59G6 | ALAN — ФИНАЛЬНАЯ КОНФИГУРАЦИЯ АВТОЗАПУСКА (April 11, 2026) П
+29 | 0.4048 | memory     | len=  115 | 01KN1106NN31AFYP4GF29DEG5H | AS попросил дожать размещение лендинга. Проверяю более стаби
+30 | 0.4041 | context    | len= 5530 | 01KNZ3PFYHP71BCEHF288H8MFN | REFACTOR PLAN: Alan + Aizek → wrapper+cron architecture (Apr
+
+=== "упал" — top 30 of 739 ===
+ 1 | 0.5088 | memory     | len=   92 | 01KN0WW883QW2VA869A4EQH1QN | User checked whether I am back after earlier instability and
+ 2 | 0.4875 | memory     | len=  139 | 01KN10KP725ZKZ5GCK557RV900 | Перезапустил Cloudflare Tunnel после падения. Новая временна
+ 3 | 0.4828 | memory     | len=  182 | 01KN110VY251GX9TDCSYR7V01Z | Создал публичный GitHub repo askhatsoltanov1984-lang/bunk-be
+ 4 | 0.4763 | project    | len=    9 | 01KMKRVYF3P6K87B40070TC9KA | LOCATIONS
+ 5 | 0.4692 | memory     | len=   73 | 01KPBSGADK9MHMVBDQJNEGSJK9 | [dan] ⚙️ Agent was aborted. session: agent:main:telegram:dir
+ 6 | 0.4636 | memory     | len=   55 | 01KN0XBS4CZVKCKT1MPSV8P1TG | User added me to WhatsApp group named news temporarily.
+ 7 | 0.4633 | project    | len=    5 | 01KMKRVYF36ZHE667DSVHQGB7F | FLOCK
+ 8 | 0.4609 | memory     | len=  143 | 01KN10BZ6S2Y3W8BEJ9CW62YFM | Поднял временную публичную ссылку через Cloudflare Tunnel на
+ 9 | 0.4553 | memory     | len=   61 | 01KN0YPCT1NX05J7H3TF7XNGD5 | AS попросил переключиться на модель gpt 5-4. Выполняю запрос
+10 | 0.4526 | project    | len=   11 | 01KMKRVYF3S266JM3WTR3J6T2H | OPENCLAW IS
+11 | 0.4510 | memory     | len=  142 | 01KN10K12NWK674QS2JPG33MT6 | AS прислал скрин с ошибкой Cloudflare Tunnel 1033 и сказал, 
+12 | 0.4476 | memory     | len= 3898 | 01KP3HMR1S3V2J4A2Q8W0HQ6BD | SYNC COMPLETE — Alan + Aizek на единой архитектуре (13 апрел
+13 | 0.4468 | memory     | len=   84 | 01KN0XXNKWS3XBBT0QNZJXP1M8 | В группе NEWS AS упомянул меня и спросил, здесь ли я; отвеча
+14 | 0.4443 | memory     | len= 5492 | 01KMS8PR1K2ENKARMP1JWQ60QM | INCIDENT POST-MORTEM: Qoopia Server Down — March 27, 2026 ##
+15 | 0.4441 | memory     | len=   74 | 01KQSNE8SXGQMYGYEA8QK9XX7Y | Уведомил Асхата о входящем WhatsApp от Arailym (+77787433556
+16 | 0.4440 | task       | len=   30 | 01KMKRVYF9KVKKMG7PRSHG9859 | MCP Filesystem Server deployed
+17 | 0.4417 | task       | len=   48 | 01KN742ZPNPHQZNGBYHV25VF36 | [Новая] Движение ингредиента/полуфабриката/блюда
+18 | 0.4409 | project    | len=    7 | 01KMKRVYF31DTFTFD2CD7SHPMK | MARKETS
+19 | 0.4399 | memory     | len=  793 | 01KN39P6X3YYSTPRE6JQV1BMKH | INCIDENT: Gateway crash after Aidan switched all 4 agents to
+20 | 0.4386 | knowledge  | len= 3191 | 01KP3HT5PJ7S6MEBQBSHZWGGFW | bot-watchdog.sh — НЕ сносить, оставить как третий уровень за
+21 | 0.4386 | memory     | len= 2574 | 01KNYV4NBM9072SNQ7RDXQ0PJD | ALAN RECOVERY (April 11, 2026) — Алан был мёртв 55+ часов в 
+22 | 0.4378 | task       | len=   51 | 01KMPERGDX16283EMH5VEHBCTK | Qoopia Memory Layer: note / recall / brief deployed
+23 | 0.4369 | context    | len= 4294 | 01KN3PXH2DCWF5K3GD88CR74SG | ПОЛНЫЙ ОТЧЁТ СЕССИИ 31 марта - 1 апреля 2026 (5+ часов, clau
+24 | 0.4343 | memory     | len= 4191 | 01KNYYFB2BWV8MW7VBS5XNC688 | SESSION SUMMARY (April 11, 2026, 12:00–13:54 CDT) — Alan rec
+25 | 0.4333 | memory     | len= 4799 | 01KNYTB18JGXXK06YNWPG814ZH | SESSION SUMMARY (April 9-10, 2026) — Phase 1 migration + Pha
+26 | 0.4321 | memory     | len=   93 | 01KPBFBJ2C6YSX7XC5C6X0MV85 | [dan] Пардон, искал неправильно. Ищу по thread: session: age
+27 | 0.4304 | memory     | len=  101 | 01KN0Z34GWVRKQRMGXV4D4WS3J | В группе NEWS напомнили, что ждут ссылку на лендинг Bunk Bed
+28 | 0.4294 | memory     | len=  606 | 01KMTB8TVA0T5JZQFJFZME89NQ | Первый день работы с Асхатом. Подключили Whoop API (client_i
+29 | 0.4289 | knowledge  | len= 1106 | 01KPF480QJ4G4HMPE6H04P2BEB | **NETWORK COLLAPSE — HOW NETWORKS DIE** Source: The Cold Sta
+30 | 0.4284 | memory     | len=   67 | 01KN3210HVQ9A7AV5TEDE1A4MT | AS requested switching current NEWS WhatsApp group session t
+
+=== "починили" — top 30 of 739 ===
+ 1 | 0.5493 | memory     | len=   60 | 01KMSB2HVMA2YWEBFSKP9YDK8E | Completed: deploy staging health checks is done and verified
+ 2 | 0.5224 | project    | len=   11 | 01KMKRVYF3S266JM3WTR3J6T2H | OPENCLAW IS
+ 3 | 0.5082 | memory     | len=   64 | 01KMSAN2R73ECPPN5559AT4NWT | Completed deploy health checks - all services are up and run
+ 4 | 0.4977 | project    | len=    5 | 01KMKRVYF36ZHE667DSVHQGB7F | FLOCK
+ 5 | 0.4977 | memory     | len=   83 | 01KN38WQ0ZZAHDHY375NRBZ988 | Запустил auto_responder.py по cron — скрипт завершился успеш
+ 6 | 0.4967 | memory     | len=   68 | 01KMPEG8KZJ29RDWJY9M4H66GT | Finished Make it Cozy post for Instagram. Batch 5 photo 3 pu
+ 7 | 0.4876 | memory     | len=  104 | 01KN0ZC127T1WKT6S1H5021HD0 | AS разрешил залить лендинг любым доступным способом. Проверя
+ 8 | 0.4870 | project    | len=    9 | 01KMKRVYF3P6K87B40070TC9KA | LOCATIONS
+ 9 | 0.4857 | memory     | len=  483 | 01KMZ4YSJMDT9KWMMVGHC3C260 | SESSION CLOSED 30 March 2026 05:30 CDT. Phase 1 accepted and
+10 | 0.4789 | memory     | len=  153 | 01KN1W436F8RQ7CZAAB6SWNAY1 | AS поручил поднять все вопросы Маулена из сессии, провести г
+11 | 0.4766 | task       | len=   20 | 01KMKRVYF8CCYGC50PKX7SR8Q2 | GitHub Sync настроен
+12 | 0.4742 | knowledge  | len= 1634 | 01KN5J2TYZHG2SZBXHDPF3ZYNG | QOOPIA FULL AUDIT COMPLETE — 3 passes, all merged to master 
+13 | 0.4738 | task       | len=   30 | 01KMKRVYF77GVQPJV3JNYKSECP | #16 Cinco Ranch Rd — уже сдана
+14 | 0.4737 | context    | len= 4294 | 01KN3PXH2DCWF5K3GD88CR74SG | ПОЛНЫЙ ОТЧЁТ СЕССИИ 31 марта - 1 апреля 2026 (5+ часов, clau
+15 | 0.4736 | task       | len=   35 | 01KMKRVYF8PV3N822ZSWZ1MNK5 | Zombie MCP processes — cron cleanup
+16 | 0.4728 | memory     | len=   35 | 01KN5HQRB1YJX56QYNR0K16P7P | test measurement note - will delete
+17 | 0.4725 | memory     | len=  133 | 01KN1W7DCAR1N14SN6ZB2WCCKH | Подготовил одностраничную research note PDF по вопросам Маул
+18 | 0.4704 | memory     | len=  207 | 01KPBT5ZP0GFDNGPTH0WKQQPDK | [dan] Да, работаю. Это последний ответ от старого Aidan на O
+19 | 0.4698 | memory     | len= 2364 | 01KP43Z482TNNGCPVAJQDD0YN9 | СЕССИЯ 2026-04-13 (Claude Code, wonderful-robinson worktree)
+20 | 0.4680 | task       | len=   24 | 01KN742ZSA47BKC2EECATJ2XTV | [Новая] Отчёт по бонусам
+21 | 0.4670 | memory     | len=   94 | 01KPBEYWHJWE8K92KZCA91X6G3 | [dan] Отправлено. Анара получила, Saule в копии. session: ag
+22 | 0.4655 | memory     | len= 2080 | 01KP46PE9QFGKXS35YTE6VDTCH | СЕССИЯ 2026-04-13 (Claude Code, hungry-perlman worktree) ## 
+23 | 0.4652 | memory     | len=   73 | 01KPBSGADK9MHMVBDQJNEGSJK9 | [dan] ⚙️ Agent was aborted. session: agent:main:telegram:dir
+24 | 0.4623 | context    | len= 1118 | 01KN3G9HJ8BHESX7E39HQA1PWR | QOOPIA OPTIMIZATION — ALL 3 CHANGES COMPLETE. Change 1: SELE
+25 | 0.4618 | memory     | len=   81 | 01KPBHEV179N564VTM0H8RSFJZ | [dan] Делаю полную ревизию системы: session: agent:main:tele
+26 | 0.4611 | knowledge  | len= 1261 | 01KN5MWFGKAHCF1Y3G7FA9G9K0 | QOOPIA AUDIT PASS 4 COMPLETE — commit caf5710, merged to mas
+27 | 0.4605 | knowledge  | len= 1657 | 01KN5H6Z2BRHD4TQ3DSKD3SET4 | QOOPIA AUDIT PASS 2 COMPLETE — commit ce61ca3 on branch audi
+28 | 0.4602 | memory     | len= 1929 | 01KNZ471RX3HCECXK0AAG4YYFV | Рефактор Alan + Aizek на чистую архитектуру tmux+wrapper+cro
+29 | 0.4587 | memory     | len= 4191 | 01KNYYFB2BWV8MW7VBS5XNC688 | SESSION SUMMARY (April 11, 2026, 12:00–13:54 CDT) — Alan rec
+30 | 0.4582 | memory     | len=  375 | 01KMPHEJ6HWDHR7NNHDHHCQ5H7 | Completed Stage 1 Qoopia data audit. 61 tasks audited, 26 co
+
+=== "сломалась" — top 30 of 739 ===
+ 1 | 0.5296 | memory     | len=   92 | 01KN0WW883QW2VA869A4EQH1QN | User checked whether I am back after earlier instability and
+ 2 | 0.5250 | project    | len=    5 | 01KMKRVYF36ZHE667DSVHQGB7F | FLOCK
+ 3 | 0.4986 | task       | len=   48 | 01KN742ZPNPHQZNGBYHV25VF36 | [Новая] Движение ингредиента/полуфабриката/блюда
+ 4 | 0.4907 | memory     | len=  139 | 01KN10KP725ZKZ5GCK557RV900 | Перезапустил Cloudflare Tunnel после падения. Новая временна
+ 5 | 0.4898 | project    | len=   11 | 01KMKRVYF3S266JM3WTR3J6T2H | OPENCLAW IS
+ 6 | 0.4847 | project    | len=    9 | 01KMKRVYF3P6K87B40070TC9KA | LOCATIONS
+ 7 | 0.4815 | memory     | len= 3898 | 01KP3HMR1S3V2J4A2Q8W0HQ6BD | SYNC COMPLETE — Alan + Aizek на единой архитектуре (13 апрел
+ 8 | 0.4790 | memory     | len=  101 | 01KN0Z34GWVRKQRMGXV4D4WS3J | В группе NEWS напомнили, что ждут ссылку на лендинг Bunk Bed
+ 9 | 0.4773 | memory     | len=  207 | 01KPBT5ZP0GFDNGPTH0WKQQPDK | [dan] Да, работаю. Это последний ответ от старого Aidan на O
+10 | 0.4767 | memory     | len=   35 | 01KN5HQRB1YJX56QYNR0K16P7P | test measurement note - will delete
+11 | 0.4761 | memory     | len=  142 | 01KN10K12NWK674QS2JPG33MT6 | AS прислал скрин с ошибкой Cloudflare Tunnel 1033 и сказал, 
+12 | 0.4752 | task       | len=   39 | 01KMKRVYF90MPBBZHDC1CZBKCY | Fix heartbeat calendar check (HTTP 400)
+13 | 0.4739 | task       | len=   36 | 01KN742ZTKBR2N81ZHPZJAW3K5 | [Новая] Загрузка банковских выгрузок
+14 | 0.4732 | memory     | len=  290 | 01KN9DEQV1T50ZTTBB2GPQA8YQ | Опубликовал cake slice video (ханшайым-eng-озвучка.mp4): Ins
+15 | 0.4716 | memory     | len= 5492 | 01KMS8PR1K2ENKARMP1JWQ60QM | INCIDENT POST-MORTEM: Qoopia Server Down — March 27, 2026 ##
+16 | 0.4712 | knowledge  | len= 3191 | 01KP3HT5PJ7S6MEBQBSHZWGGFW | bot-watchdog.sh — НЕ сносить, оставить как третий уровень за
+17 | 0.4709 | task       | len=   38 | 01KMP64R2YQNPFPC6AHYYPT5W9 | Gmail hook fix (channel telegram→last)
+18 | 0.4705 | memory     | len= 2245 | 01KNYWJZ30MCJ153TV40EMSBZ9 | CORRECTION к ноте 01KNYVTHXVDCXJP6YSP6RJ59G6 ("ALAN — ФИНАЛЬ
+19 | 0.4653 | memory     | len=   61 | 01KN0YPCT1NX05J7H3TF7XNGD5 | AS попросил переключиться на модель gpt 5-4. Выполняю запрос
+20 | 0.4646 | memory     | len=   73 | 01KPBSGADK9MHMVBDQJNEGSJK9 | [dan] ⚙️ Agent was aborted. session: agent:main:telegram:dir
+21 | 0.4639 | context    | len=11019 | 01KPBTTF13NQFW0XWFNJWBD5Z1 | # AIDAN CUTOVER — HANDOFF ДЛЯ ALAN (STEWARD) Дата: 2026-04-1
+22 | 0.4633 | memory     | len=   81 | 01KPBHEV179N564VTM0H8RSFJZ | [dan] Делаю полную ревизию системы: session: agent:main:tele
+23 | 0.4632 | memory     | len=  143 | 01KN10BZ6S2Y3W8BEJ9CW62YFM | Поднял временную публичную ссылку через Cloudflare Tunnel на
+24 | 0.4620 | memory     | len=  655 | 01KPPVSNHMDCTGBS3R3WRXWAC9 | 2026-04-20 20:51 CDT: отправлен reply Анаре Тулендиевой по H
+25 | 0.4615 | memory     | len=   93 | 01KPBFBJ2C6YSX7XC5C6X0MV85 | [dan] Пардон, искал неправильно. Ищу по thread: session: age
+26 | 0.4613 | memory     | len=  239 | 01KMPHEF977TGRQ5W7BH973RA7 | Morning digest and Scout cron jobs failed overnight with Uns
+27 | 0.4610 | memory     | len=   94 | 01KPBEYWHJWE8K92KZCA91X6G3 | [dan] Отправлено. Анара получила, Saule в копии. session: ag
+28 | 0.4608 | context    | len= 4294 | 01KN3PXH2DCWF5K3GD88CR74SG | ПОЛНЫЙ ОТЧЁТ СЕССИИ 31 марта - 1 апреля 2026 (5+ часов, clau
+29 | 0.4577 | task       | len=   53 | 01KN742ZQYHMS4NEMEPS82X9R0 | [Новая] Себестоимость по складам за определённый день
+30 | 0.4576 | memory     | len=  104 | 01KN0ZC127T1WKT6S1H5021HD0 | AS разрешил залить лендинг любым доступным способом. Проверя
+
+=== "postmortem" — top 30 of 739 ===
+ 1 | 0.5094 | knowledge  | len=  720 | 01KN3FB7X1KMA88XEJKSYE9DBF | POST-MORTEM: Aizek polling incident. Aidan confirmed he crea
+ 2 | 0.4839 | project    | len=    9 | 01KMKRVYF3P6K87B40070TC9KA | LOCATIONS
+ 3 | 0.4778 | task       | len=   24 | 01KN742ZSA47BKC2EECATJ2XTV | [Новая] Отчёт по бонусам
+ 4 | 0.4739 | memory     | len=   92 | 01KN0WW883QW2VA869A4EQH1QN | User checked whether I am back after earlier instability and
+ 5 | 0.4737 | task       | len=   40 | 01KMKRVYF8JGV232BC7PKWPSFW | Alan/Aizek memory/ — ждём первых записей
+ 6 | 0.4649 | memory     | len= 2574 | 01KNYV4NBM9072SNQ7RDXQ0PJD | ALAN RECOVERY (April 11, 2026) — Алан был мёртв 55+ часов в 
+ 7 | 0.4604 | memory     | len=   35 | 01KN5HQRB1YJX56QYNR0K16P7P | test measurement note - will delete
+ 8 | 0.4557 | memory     | len= 4191 | 01KNYYFB2BWV8MW7VBS5XNC688 | SESSION SUMMARY (April 11, 2026, 12:00–13:54 CDT) — Alan rec
+ 9 | 0.4530 | task       | len=   34 | 01KMKRVYF95ZHX1N18XP8JKZ66 | Fish Audio — оценка и тестирование
+10 | 0.4508 | context    | len=11019 | 01KPBTTF13NQFW0XWFNJWBD5Z1 | # AIDAN CUTOVER — HANDOFF ДЛЯ ALAN (STEWARD) Дата: 2026-04-1
+11 | 0.4469 | knowledge  | len= 3414 | 01KP9DWYPJWXAG6625VZXRZV4A | PEER REVIEW: сравнение моего отчёта с Board-Level Operating 
+12 | 0.4395 | memory     | len= 3898 | 01KP3HMR1S3V2J4A2Q8W0HQ6BD | SYNC COMPLETE — Alan + Aizek на единой архитектуре (13 апрел
+13 | 0.4384 | project    | len=    7 | 01KMKRVYF31DTFTFD2CD7SHPMK | MARKETS
+14 | 0.4384 | memory     | len=  195 | 01KN2ACC893NQG5M0XE7BXDC5E | User wants a strict rule remembered: for factual questions, 
+15 | 0.4380 | memory     | len=   60 | 01KMSB2HVMA2YWEBFSKP9YDK8E | Completed: deploy staging health checks is done and verified
+16 | 0.4372 | task       | len=   43 | 01KN742ZRA66TQZ5M7P1D7ATQ7 | [Новая] Отчёт по себестоимости ингредиентов
+17 | 0.4371 | project    | len=   11 | 01KMKRVYF3S266JM3WTR3J6T2H | OPENCLAW IS
+18 | 0.4358 | context    | len= 5530 | 01KNZ3PFYHP71BCEHF288H8MFN | REFACTOR PLAN: Alan + Aizek → wrapper+cron architecture (Apr
+19 | 0.4353 | context    | len= 8225 | 01KNYZGDDK0Q6097MHBTFXYT7T | AIZEK MIGRATION — CHECKPOINT (April 11, 2026, ~14:15 CDT, mi
+20 | 0.4325 | context    | len= 4294 | 01KN3PXH2DCWF5K3GD88CR74SG | ПОЛНЫЙ ОТЧЁТ СЕССИИ 31 марта - 1 апреля 2026 (5+ часов, clau
+21 | 0.4315 | memory     | len=  337 | 01KPBJW7A36TTJ54S5MHQA8PBC | Дастан попросил ещё раз тщательно проверить, было ли указани
+22 | 0.4308 | memory     | len=  349 | 01KP3M2143M2MQ58VXJEP2ZX75 | 13 апреля 2026, ~09:30 CDT. Разбор polling-войны Алана/Айзек
+23 | 0.4297 | memory     | len= 2039 | 01KMSBHXNFZCWNQWTFYTR7KMRQ | [REVIEW-RESPONSE] Re: PHASE 2 COMPLETE VERDICT: APPROVED Ana
+24 | 0.4285 | rule       | len=   52 | 01KMZ3BMRSZ37YWKA60ATVMFQ9 | Test rule: always verify email sender before sending
+25 | 0.4277 | memory     | len=  189 | 01KRFA717FZ943WS4EDAEKD5YW | 2026-05-12 19:00 CDT: Отправил daily check-in Айсулу (задерж
+26 | 0.4262 | memory     | len=  104 | 01KN0ZC127T1WKT6S1H5021HD0 | AS разрешил залить лендинг любым доступным способом. Проверя
+27 | 0.4239 | task       | len=   51 | 01KMPERGDX16283EMH5VEHBCTK | Qoopia Memory Layer: note / recall / brief deployed
+28 | 0.4229 | knowledge  | len= 3667 | 01KNYVTHXVDCXJP6YSP6RJ59G6 | ALAN — ФИНАЛЬНАЯ КОНФИГУРАЦИЯ АВТОЗАПУСКА (April 11, 2026) П
+29 | 0.4226 | memory     | len= 4799 | 01KNYTB18JGXXK06YNWPG814ZH | SESSION SUMMARY (April 9-10, 2026) — Phase 1 migration + Pha
+30 | 0.4214 | task       | len=   73 | 01KN742ZRMCN2M2854KB9JW4S7 | [Новая] Пересчёт себестоимости при редактировании накладных 
